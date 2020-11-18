@@ -1,0 +1,17 @@
+{% extends "main.html" %}
+{% block content %}
+<input type="text" id="chat" placeholder="type a message...">
+<button onclick="send()"> Send </button>
+<p id = "log">
+
+</p>
+
+<script>
+    function send(){
+        var message = document.getElementById("chat").value;
+        document.getElementById("log").innerHTML += message + "</br>" ;
+    }
+</script>
+
+
+{% endblock content %}
